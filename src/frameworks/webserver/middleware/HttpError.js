@@ -22,6 +22,7 @@ export const ERROR={
   ProductExistsError:createErrorClass('ProductExistsError',409),
   ProductNotExists:createErrorClass('ProductNotExists',404),
   ProductNotDeleted:createErrorClass("ProductNotDeleted",409),
-  UserExistError:createErrorClass("UserExistError",404)
+  UserExistError:createErrorClass("UserExistError",404),
+  
  
 }

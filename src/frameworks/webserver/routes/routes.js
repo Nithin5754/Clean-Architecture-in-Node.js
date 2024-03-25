@@ -1,9 +1,11 @@
-import { categoryRouter, productRouter, userRouter} from './index.js';
+import { authRouter, categoryRouter, productRouter, userRouter} from './index.js';
 
 export const routes = (express,app) => {
   // app.use('/api/v1/product', productRouter(express));
 
   app.use('/api/v1/user',userRouter(express))
+
+  app.use('/api/v1/auth',authRouter(express))
 
   app.use('/api/v1/category', categoryRouter(express));
 
